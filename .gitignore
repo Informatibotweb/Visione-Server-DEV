@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+visione_dev_knowledge.db
+.env
