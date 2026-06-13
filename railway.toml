@@ -1,2 +1,0 @@
-[deploy]
-startCommand = "gunicorn visione_coder_engine:app --bind 0.0.0.0:$PORT"
