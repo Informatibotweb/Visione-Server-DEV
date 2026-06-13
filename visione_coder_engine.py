@@ -79,7 +79,7 @@ def chat_dev():
     dati = request.get_json() or {}
     domanda = dati.get('message', '').strip()
 
-    if not) domanda:
+    if not domanda:
         return jsonify({'error': 'La richiesta non può essere vuota.'}), 400
 
     tabella_visibile = IngegneriaRagionamentoVisibile.genera_tabella_ragionamento(domanda)
@@ -112,7 +112,7 @@ def chat_dev():
     risposta_finale = tabella_visibile + testo_codice
 
     return jsonify({
-        'response': respuesta_finale,
+        'response': risposta_finale,
         'software': "Visione Dev Advanced Engine",
         'versione': "v18.5-Coder"
     })
